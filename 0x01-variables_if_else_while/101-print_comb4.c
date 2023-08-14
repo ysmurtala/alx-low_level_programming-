@@ -18,7 +18,6 @@ int main(void)
 		while (j <= '9')
 		{
 			k = '0';
-
 			while (k <= '9')
 			{
 				if (i < j && j < k)
@@ -27,7 +26,7 @@ int main(void)
 					putchar(j);
 					putchar(k);
 
-					if (i != 7)
+					if (i != '7')
 					{
 						putchar(',');
 						putchar(' ');
