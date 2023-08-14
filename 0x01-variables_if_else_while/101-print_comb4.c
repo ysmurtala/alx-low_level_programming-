@@ -17,6 +17,8 @@ int main(void)
 	{
 		while (j <= '9')
 		{
+			k = '0';
+
 			while (k <= '9')
 			{
 				if (i < j && j < k)
@@ -37,7 +39,6 @@ int main(void)
 		}
 		i++;
 		j = '0';
-		k = '0';
 	}
 	putchar('\n');
 return (0);
