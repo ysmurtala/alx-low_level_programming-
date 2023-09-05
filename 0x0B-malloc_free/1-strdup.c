@@ -7,26 +7,28 @@
  */
 char *_strdup(char *str)
 {
-	int i;
-	int len = 0;
+	int i = 0, len = 1;
 	char *copy;
 
 	if (str == NULL)
 		return (NULL);
 
 	while (str[len])
+	{
 		len++;
+	}
 
-	copy = malloc(sizeof(char) * (len + 1));
+	copy = malloc((sizeof(char) * len) + 1);
 
 	if (copy == NULL)
 		return (NULL);
 
-	for (i = 0; i < len; i++)
+	while (i < len)
 	{
 		copy[i] = str[i];
+		i++;
 	}
 
-	copy[len] = '\n';
+	copy[i] = '\n';
 	return (copy);
 }
