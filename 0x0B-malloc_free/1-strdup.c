@@ -22,13 +22,13 @@ char *_strdup(char *str)
 
 	if (copy == NULL)
 		return (NULL);
+
 	while (a < i)
 	{
 		copy[a] = str[a];
 		a++;
 	}
+
 	copy[a] = '\n';
-
 	return (copy);
-
 }
